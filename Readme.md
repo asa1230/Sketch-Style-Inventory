@@ -1,25 +1,12 @@
 *****
-**Important note:** The plugin has been updated to work with Sketch 3.3+
+**注意:** 请用Sketch 3.3及以上版本
 *****
 
-# Style Inventory for Sketch
+# sketch风格管理器
 
 Design requires free, sometimes chaotic exploration. But design also means organisation and structure. Sketch can be good in both aspects, but moving from exploration to structured layouts with text styles and unified colors is hard. Either you start clean files from scratch, or you use what you have and try to tidy it up. The Style Inventory is meant to help you with that. It gives you an overview of all your used styles and helps you to merge styles of similar layers into one.
 
 ![Generate dialog](http://f.cl.ly/items/3c1N0F3K0i2T1x3z0F2X/Bildschirmfoto%202015-04-26%20um%2022.05.10.png)
-
-## Change Log
-
-**April 26, 2015**
-* added Symbols Inventory
-* simplified export
-* added configurator
-
-**April 14, 2015**
-Updated plugins for Sketch 3.3+
-
-**December 7, 2014**
-* Moved all unreleated plugins to a new repository called [Sketch Mate](https://github.com/getflourish/Sketch-Mate). It will take a few days to update the documentation for the new plugins.
 
 ## Plugin Directory
 
