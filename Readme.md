@@ -23,20 +23,20 @@ Updated plugins for Sketch 3.3+
 
 ## Plugin Directory
 
-#### Inventory
+#### 生成器快捷键
 * Generate `ctrl` + `⌘` + `⌥` + `I`
 
-#### Selection
-* by Color/Select Layers by Color `shift` + `ctrl` + `⌘` + `C`
-* by Color/Select Layers by Color on Artboard `ctrl` + `⌘` + `C`
-* by Name/Select Layers by Name `shift` + `ctrl` + `⌘` + `N`
-* by Name/Select Layers by Name on Artboard `ctrl` + `⌘` + `N`
-* by String/Replace String `shift` + `⌘` + `K`
-* by Text Style/Select Similar Text Layers `shift` + `ctrl` + `⌘` + `T`
-* by Text Style/Select Similar Text Layers on Artboard `⌘` + `control` + `T`
+#### 快速选择对象快捷键
+* 颜色/通过颜色选择所有图层 `shift` + `ctrl` + `⌘` + `C`
+* 颜色/通过颜色选择当前画布上的图层 `ctrl` + `⌘` + `C`
+* 名称/通过名称选择所有图层 `shift` + `ctrl` + `⌘` + `N`
+* 名称/通过名称选择当前画布上的图层  `ctrl` + `⌘` + `N`
+* 字符/替换字符 `shift` + `⌘` + `K`
+* 字体风格/通过字体风格选择所有图层 `shift` + `ctrl` + `⌘` + `T`
+* 字体风格/通过字体风格选择当前画布上的图层 `⌘` + `control` + `T`
 
 
-## Installation
+## 安装
 
 To install all plugins, [download](https://github.com/getflourish/Sketch-Style-Inventory/archive/master.zip) them all first, unzip the archive, and place the folder contents in your Sketch Plugins folder by navigating to `Sketch > Plugins > Reveal Plugins Folder…`
 
@@ -44,7 +44,7 @@ To install only a selection of plugins, you will first need to place the library
 
 You can then install selected plugins by double-clicking the file, or alternatively, drag and drop the file onto the Sketch app icon. This will automatically copy the plugin to your Sketch Plugins folder.
 
-## Keyboard Shortcuts
+## 键盘快捷键
 
 Most plugins have a pre-defined keyboard shortcut. You can always change it by editing the shortcut written in parenthesis at the end of the first line of a plugin.
 
@@ -55,7 +55,7 @@ For example, the first line of `Duplicate Artboard.sketchplugin`:
 You can use modifier keys such as `option`, `command`, `control`, `shift`
 
 
-### Generate
+### 生成内容
 
 This command can generate artboards that collect all colors, text styles and symbols of a document. Choose what you want to generate in the configurator. The artboards will be generated on a new page called "Style Inventory".
 
@@ -63,7 +63,7 @@ This command can generate artboards that collect all colors, text styles and sym
 
 ![Generate dialog](https://dl.dropboxusercontent.com/u/974773/_keepalive/Style%20Inventory/generate.gif)
 
-### Export Metadata
+### 导出 Metadata
 
 When you select this option in the generator, Sketch will export metadata and images of your project that you can use in development. Colors as JSON, symbols as PNG, text styles as JSON.
 
@@ -71,7 +71,7 @@ When you select this option in the generator, Sketch will export metadata and im
 
 ![Generate dialog](http://f.cl.ly/items/3944230o3a0V1u2u463t/export%20metadata.gif)
 
-### Select Layers by Color on Artboard
+### 通过颜色选择当前画布的图层
 
 Based on a selected layer, all layers on the current artboard that match the fill or text color will be selected.
 
@@ -79,17 +79,17 @@ Based on a selected layer, all layers on the current artboard that match the fil
 
 ![Selection Animation](https://dl.dropboxusercontent.com/u/974773/_keepalive/Style%20Inventory/Select%20by%20Color.gif)
 
-### Select Layers by Color
+### 通过颜色选中图层
 
 `experimental` Based on a selected layer, all document layers that match the fill or text color will be selected.
 
-### Select Layers by Name
+### 通过名称选择图层
 
 Based on a selected layer, all layers that match the name of the reference layer will be selected. This will also include layers that have appended numbers from duplication (e.g. Rectangle 1, Rectangle 2, …)
 
 **Shortcut:** `ctrl` + `⌘` + `N`
 
-### Replace String
+### 替换字符
 
 Replaces all occurences of the text string found in the selected text layer
 
@@ -97,11 +97,11 @@ Replaces all occurences of the text string found in the selected text layer
 
 ![Selection Animation](https://dl.dropboxusercontent.com/u/974773/_keepalive/Style%20Inventory/Select%20by%20Name.gif)
 
-### Select Next Layer by Color
+### 通过颜色选择下一个图层
 
 `experimental` Based on a selection, the next layer with the same fill color will be selected.
 
-### Select Next Layer by Text Style
+### 通过字体风格选择下一个图层
 
 `experimental` Based on a selection, the next layer with the same text style will be selected.
 
