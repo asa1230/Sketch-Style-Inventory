@@ -12,5 +12,5 @@ if (selection.count() == 1) {
     doc.showMessage(result.count() + " layers of " + scope.count() + " selected. " + referenceName);
 
 } else {
-    doc.showMessage("Please select a reference layer.");
+    doc.showMessage("请选择一个带色值的图层供参考.");
 }
