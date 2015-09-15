@@ -33,5 +33,5 @@ if (selection.count() == 1) {
 
 	com.getflourish.view.centerTo(result[index]);
 } else {
-    doc.showMessage("Please select a reference layer.");
+    doc.showMessage("请选择一个带色值的图层供参考.");
 }
