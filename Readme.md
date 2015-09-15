@@ -2,18 +2,16 @@
 **注意:** 请用Sketch 3.3及以上版本
 *****
 
-# sketch风格管理器
+# sketch-设计规范样式管理器
 
-Design requires free, sometimes chaotic exploration. But design also means organisation and structure. Sketch can be good in both aspects, but moving from exploration to structured layouts with text styles and unified colors is hard. Either you start clean files from scratch, or you use what you have and try to tidy it up. The Style Inventory is meant to help you with that. It gives you an overview of all your used styles and helps you to merge styles of similar layers into one.
+设计往往需要不受限制的发挥,有的甚至从杂乱中来获得灵感。但是对于设计项目本身，设计师需要进行设计文件的组织和整理的。相比而言，Sketch在这些方面做的很好！ 但如果你想移动或整理文本样式或统一调整某个UI的颜色，sketch还是有点难搞定。比如：清理sketch样式列表,或者是保存已经用的，清理掉没有用的样式. 这款插件就可以帮助大家解决这个问题.他可以快速列出所有已经用过的样式并帮助合并风格类似的样式设定.
 
-![Generate dialog](http://f.cl.ly/items/3c1N0F3K0i2T1x3z0F2X/Bildschirmfoto%202015-04-26%20um%2022.05.10.png)
+![插件面板](http://f.cl.ly/items/3c1N0F3K0i2T1x3z0F2X/Bildschirmfoto%202015-04-26%20um%2022.05.10.png)
+## 快捷键
+#### 调用插件-快捷键
+* 快捷键 `ctrl` + `⌘` + `⌥` + `I`
 
-## Plugin Directory
-
-#### 生成器快捷键
-* Generate `ctrl` + `⌘` + `⌥` + `I`
-
-#### 快速选择对象快捷键
+#### 快速选择对象-快捷键
 * 颜色/通过颜色选择所有图层 `shift` + `ctrl` + `⌘` + `C`
 * 颜色/通过颜色选择当前画布上的图层 `ctrl` + `⌘` + `C`
 * 名称/通过名称选择所有图层 `shift` + `ctrl` + `⌘` + `N`
@@ -23,89 +21,84 @@ Design requires free, sometimes chaotic exploration. But design also means organ
 * 字体风格/通过字体风格选择当前画布上的图层 `⌘` + `control` + `T`
 
 
-## 安装
+#### 如何设置键盘快捷键
 
-To install all plugins, [download](https://github.com/getflourish/Sketch-Style-Inventory/archive/master.zip) them all first, unzip the archive, and place the folder contents in your Sketch Plugins folder by navigating to `Sketch > Plugins > Reveal Plugins Folder…`
-
-To install only a selection of plugins, you will first need to place the library file `inventory.js` in the root of your Sketch Plugins directory. This is very important as all plugins rely on its functionality.
-
-You can then install selected plugins by double-clicking the file, or alternatively, drag and drop the file onto the Sketch app icon. This will automatically copy the plugin to your Sketch Plugins folder.
-
-## 键盘快捷键
-
-Most plugins have a pre-defined keyboard shortcut. You can always change it by editing the shortcut written in parenthesis at the end of the first line of a plugin.
-
-For example, the first line of `Duplicate Artboard.sketchplugin`:
+许多插件都默认好了基本的快捷键，你可以依据自己的习惯去设置这些快捷键.如果遇到快捷键无效的时候，可能就是快捷键冲突，需要重新设定一下。这里举个例子：
+比如,第一行是 `Duplicate Artboard.sketchplugin`:
 
 > // Duplicates the current artboard right next to it. (shift command d)
 
-You can use modifier keys such as `option`, `command`, `control`, `shift`
+你可以修改快捷键为 `option`, `command`, `control`, `shift`
+
+## 功能介绍
+
+### 1.生成视觉样式规范内容
+
+这个功能可以帮助设计师快速生成颜色，字体风格或文档中的视觉规范组件。设定好你想输出的内容配置，画板会自动生成一个名为“style inventory”的画布
+
+**快捷键:** `ctrl` + `⌘` + `⌥` + `I`
+
+![功能演示](https://dl.dropboxusercontent.com/u/974773/_keepalive/Style%20Inventory/generate.gif)
 
 
-### 生成内容
+### 2.导出 Metadata
+当你选这个选项的时候，sketch将会导出项目中的图片和metadata两种类型。metadata是开发喜欢的一种类型，他把颜色色值，元件名称及属性，文字风格样式等信息都写入JSON文件，免去了他们的切图烦恼
 
-This command can generate artboards that collect all colors, text styles and symbols of a document. Choose what you want to generate in the configurator. The artboards will be generated on a new page called "Style Inventory".
+**快捷键:** `ctrl` + `⌘` + `⌥` + `I`
 
-**Shortcut:** `ctrl` + `⌘` + `⌥` + `I`
+![功能演示](http://f.cl.ly/items/3944230o3a0V1u2u463t/export%20metadata.gif)
 
-![Generate dialog](https://dl.dropboxusercontent.com/u/974773/_keepalive/Style%20Inventory/generate.gif)
+### 3.在当前画板中，通过颜色选择图层
 
-### 导出 Metadata
+选中一个图层，当前画板中，填充色或文本色与选中匹配的图层都会被一起选中。
 
-When you select this option in the generator, Sketch will export metadata and images of your project that you can use in development. Colors as JSON, symbols as PNG, text styles as JSON.
+**快捷键:** `ctrl` + `⌘` + `C`
 
-**Shortcut:** `ctrl` + `⌘` + `⌥` + `I`
+![功能演示](https://dl.dropboxusercontent.com/u/974773/_keepalive/Style%20Inventory/Select%20by%20Color.gif)
 
-![Generate dialog](http://f.cl.ly/items/3944230o3a0V1u2u463t/export%20metadata.gif)
 
-### 通过颜色选择当前画布的图层
+### 4.通过颜色选中图层
 
-Based on a selected layer, all layers on the current artboard that match the fill or text color will be selected.
+`实验中的功能` 选中一个图层，当前文档中，填充色或文本色与选中匹配的图层都会被一起选中。
 
-**Shortcut:** `ctrl` + `⌘` + `C`
+### 5.通过名称选择图层
+选中一个图层，名称与选中图层相匹配的图层都会被一起选中。说明一下，对于复制后产生的图层，一样会被选中。如（矩形1；矩形1副本1；矩形1副本2；）
 
-![Selection Animation](https://dl.dropboxusercontent.com/u/974773/_keepalive/Style%20Inventory/Select%20by%20Color.gif)
+**快捷键:** `ctrl` + `⌘` + `N`
 
-### 通过颜色选中图层
 
-`experimental` Based on a selected layer, all document layers that match the fill or text color will be selected.
+### 6.替换字符
 
-### 通过名称选择图层
+查找和替换选中文本图层中的所有重复性的文字
 
-Based on a selected layer, all layers that match the name of the reference layer will be selected. This will also include layers that have appended numbers from duplication (e.g. Rectangle 1, Rectangle 2, …)
-
-**Shortcut:** `ctrl` + `⌘` + `N`
-
-### 替换字符
-
-Replaces all occurences of the text string found in the selected text layer
-
-**Shortcut:** `shift` + `⌘` + `K`
+**快捷键:** `shift` + `⌘` + `K`
 
 ![Selection Animation](https://dl.dropboxusercontent.com/u/974773/_keepalive/Style%20Inventory/Select%20by%20Name.gif)
 
-### 通过颜色选择下一个图层
 
-`experimental` Based on a selection, the next layer with the same fill color will be selected.
+### 7.通过颜色选择下一个图层
 
-### 通过字体风格选择下一个图层
+`实验中的功能` 选中一个图层，填充色或文本色与之匹配下一个图层会被单独选中。
 
-`experimental` Based on a selection, the next layer with the same text style will be selected.
+### 8.通过字体风格选择下一个图层
+
+`实验中的功能` 选中一个图层，字体风格与之匹配下一个图层会被单独选中.
 
 ![Screenshot](https://dl.dropboxusercontent.com/u/974773/_keepalive/Style%20Inventory/Select%20Layer%20by%20Similar%20Style.png)
 
-## Style Inventory
-Generate a visual style sheet with all colors and text styles that you are using. This will help you to get an overview of your used styles so you can merge styles that are very close together. This will also export a CSS file with text styles.
+### 9.样式清理
+快速把界面中用的所有的颜色或风格生成一个可视化的图片。他可以帮助设计师快速浏览所有的样式并合并一些样式上比较接近的风格。他也可以一键导出字体风格的CSS文件。
 
-### Generate/Text Style Inventory
-Generates an artboard with all text styles that are used in the document.
+### 10.在新画板上-生成所有文字样式
+在新画板上快速生成文档中使用到的所有的文字样式
 ![Selection Animation](https://dl.dropboxusercontent.com/u/974773/_keepalive/Style%20Inventory/Sketch%20CSS.gif)
 
 
-### Generate/Color Inventory
-Generates an artboard with all colors that are used on the current page.
+### 11.生成所有颜色值
+在新画板上快速生成当前画板中使用到的所有色值
 
 ![Screenshot](https://dl.dropboxusercontent.com/u/974773/_keepalive/Style%20Inventory/Colors.png)
 
-### Rename/Rename selected layers
-`experimental` A simple wizard that will guide you through your styles that are missing variable names. This will be used to to provide more information for SASS and JSON export.
+### 12.快速重命名图层
+`实验中的功能` 帮你在不知道如何标准命名的情况下，简单快速的处理好图层命名。好处就是如果你是前端或开发者，能够通过生成的SASS或JSON文件获得更多信息。
+
