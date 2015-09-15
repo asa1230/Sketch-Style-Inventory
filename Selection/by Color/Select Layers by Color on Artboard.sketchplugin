@@ -15,7 +15,7 @@ if (selection.count() == 1) {
     var result = com.getflourish.layers.selectLayersByColor(referenceLayer, scope);
 
     // display message
-    doc.showMessage(result.count() + " layers of " + scope.count() + " selected. ");
+    doc.showMessage(result.count() + " / " + scope.count() + " 选中. ");
 } else {
-    doc.showMessage("Please select a reference layer.");
+    doc.showMessage("请选择一个带色值的图层供参考.");
 }
